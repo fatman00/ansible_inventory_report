@@ -9,3 +9,5 @@
 *.swo
 # test output
 *.retry
+# Ignore output folder
+out/*

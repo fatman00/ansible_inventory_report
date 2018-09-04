@@ -1,22 +1,29 @@
 ---
   - name: build IOS XE inventory
-    hosts: ios
-    connection: local
-    gather_facts:  False
-  
+    hosts: all
+    connection: network_cli
+    gather_facts:  true
+
     vars:
-       desired_ios_version: "16.06.01"
+       modelversion:
+         WS-C2960CX-8PC-L: "15.2(4)E2"
+         WS-C2960C-8PC-L: "15.2(4)E2"
+         C897VA-M-K9: "15.4(2)T1"
+         C897VAW-E-K9: "15.4(2)T1"
+         WS-C2960X-48LPS-L: "15.0(2a)EX5"
+         WS-C2960X-24PS-L: "15.2(2)E4"
 
     tasks:
 
       - name: gathering IOS XE facts
         ios_facts:
         register: all_facts
+      
+      #- debug: var=modelversion['WS-C2960CX-8PC-L']
 
       - name: create HTML report
         template:
           src: report-ios.j2
-          dest: /var/www/html/inventory_report_ios.html
+          dest: out/inventory_report_ios-{{ansible_date_time.iso8601_basic}}.html
         delegate_to: localhost
         run_once: true
-#          provider: "{{login_info}}"
