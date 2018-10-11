@@ -8,8 +8,8 @@
        modelversion:
          WS-C2960CX-8PC-L: "15.2(4)E6" #512/128 c2960cx-universalk9-tar.152-4.E6.tar
          WS-C2960C-8PC-L: "15.2(4)E2" #128/64 c2960c405-universalk9-tar.152-2.E8.tar
-         C897VA-M-K9: "15.4(3)M10" #512/256 c800-universalk9-mz.SPA.154-3.M10.bin
-         C897VAW-E-K9: "15.4(3)M10" #512/256 c800-universalk9-mz.SPA.154-3.M10.bin
+         C897VA-M-K9: "15.3(3)M10" #512/256 c800-universalk9-mz.SPA.153-3.M10.bin
+         C897VAW-E-K9: "15.3(3)M10" #512/256 c800-universalk9-mz.SPA.153-3.M10.bin
          WS-C2960X-48LPS-L: "15.2(4)E6" #128/64 c2960x-universalk9-tar.152-4.E6.tar
          WS-C2960X-24PS-L: "15.2(4)E6" #128/64 c2960x-universalk9-tar.152-4.E6.tar
          WS-C2960C-8TC-L: "15.2.(2)E8" #128/64 c2960c405-universalk9-tar.152-2.E8.tar
